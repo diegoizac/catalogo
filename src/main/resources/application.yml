@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: catalogo
+netty:
+  default:
+    allocator:
+      max-order: 3
