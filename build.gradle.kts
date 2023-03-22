@@ -5,8 +5,16 @@ plugins {
     id("org.jetbrains.kotlin.plugin.jpa") version "1.6.21"
     id("com.github.johnrengelman.shadow") version "7.1.2"
     id("io.micronaut.application") version "3.7.4"
+    id "org.sonarqube" version "3.5.0.2730"
 }
 
+sonarqube {
+  properties {
+    property "sonar.projectKey", "diegoizac_kotlin-collections-projeto-inicial"
+    property "sonar.organization", "diegoizac"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
 version = "0.1"
 group = "br.com.catalogo"
 
